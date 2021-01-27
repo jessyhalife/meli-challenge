@@ -1,0 +1,79 @@
+@import "../../utils/constants.scss";
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container {
+  margin: 1rem 0rem;
+  background-color: white;
+  width: 100%;
+  @include lg {
+    width: 80%;
+    padding: 4rem;
+  }
+}
+
+.header {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include lg {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .details {
+    max-width: 100%;
+    padding: 1rem;
+    @include lg {
+      max-width: 30%;
+      padding: 0;
+    }
+    div {
+      margin: 1rem 0px;
+    }
+    div:nth-of-type(1) {
+      font-size: 15px;
+      color: #c4c4c4;
+    }
+    div:nth-of-type(2) {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    div:nth-of-type(3) {
+      font-size: 30px;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      color: rgb(0, 166, 80);
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      background-color: rgb(52, 131, 250);
+      font-size: 20px;
+      margin: 2rem 0px;
+      padding: 1rem;
+      color: white;
+      font-weight: 400;
+      border: 0px;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+    button:hover {
+      background-color: rgba(52, 131, 250, 0.7);
+    }
+  }
+}
+
+.description {
+  padding: 0rem 2rem;
+  @include lg {
+    padding: 0;
+  }
+}

@@ -1,0 +1,29 @@
+$yellow: #fff159;
+
+//breakpoints
+$screen-min-sm: 640px;
+$screen-min-md: 768px;
+$screen-min-lg: 1024px;
+$screen-min-xl: 1028px;
+
+@mixin md {
+    @media(min-width: #{$screen-min-md})
+    {
+        @content
+    }
+};
+
+@mixin lg {
+    @media(min-width: #{$screen-min-lg})
+    {
+        @content
+    }
+};
+
+@mixin xl {
+    @media(min-width: #{$screen-min-xl})
+    {
+        @content
+    }
+};
+
